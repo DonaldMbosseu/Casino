@@ -36,11 +36,12 @@ var app = new Vue({
         },
 
         filterByCountryName(name){
-            for(let i = 0; i < this.countries.length; i++){
-                if(this.countries[i].name.common !== name){
-                    this.countries.splice(i, 1);
-                }
+            var newArray = this.countries.filter(function (el)
+            {
+              return el.name.common == name;
             }
+            );
+            this.countries = newArray;
             this.$forceUpdate();
         },
     }
