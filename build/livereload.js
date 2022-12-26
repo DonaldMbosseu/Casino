@@ -4,7 +4,7 @@ const config = require('../config');   // Require the config.js file
 const bs = require("browser-sync").create('livereload-server');
 
 // and call any methods on it.
-bs.watch('./src/*').on('change', bs.reload);
+bs.watch('./dist/*').on('change', bs.reload);
 
 // Start the Browsersync server
 bs.init({

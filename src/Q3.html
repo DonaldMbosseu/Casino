@@ -15,7 +15,8 @@
         <question3></question3>
         <country
         v-for="country in countries"
-        v-bind:name="country.name"
+        v-bind:name="country.name.official"
+        v-bind:flag="country.flags.png"
         ></country>
     </div>
 

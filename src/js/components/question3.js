@@ -14,7 +14,6 @@ Vue.component('question3', {
             this.$root.filterByCountryName(this.searchInput);
         },
         displayAll(){
-          alert("Here");
             fetch('https://restcountries.com/v3.1/all',{
                 method: "GET",
                 headers: {

@@ -4,12 +4,17 @@ Vue.component('country', {
 
         }
     },
-    props: ['name' , 'flag'],
+    props: ['name', 'flag'],
     template: `
+    <div>
     <p>{{ name }}</p>
-     <img src="https://flagcdn.com/w320/cm.png" alt="flag Image">
+    <img :src="flag" alt="flag Image">
+    </div>
     `,
     methods: {
+        runTest(){
+            alert(this.flag);
+        }
 
     },
     computed: {
