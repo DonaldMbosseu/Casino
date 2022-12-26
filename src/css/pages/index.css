@@ -1,0 +1,185 @@
+/* COMMENT: Use @import*/
+@import "../components/searchform.css";
+@import "../components/hero.css";
+
+html {
+    height: 150%;
+}
+
+body {
+	margin-top: 10%;
+    height: 150%;
+    background: rgba(1,33,105,1);
+    background: linear-gradient(180deg, rgba(1,33,105,1) 23%, rgba(0,255,255,1) 100%,rgba(0,255,255,1) 100%,rgba(1,33,105,1) 23%); 
+}
+
+@media screen and (min-width:280px ) {
+
+#appHeroes{
+	display: flex;
+	flex-direction: column;
+}
+
+	#logo{
+		position: absolute;
+		width: 10%;
+		height: 18%;
+		margin-left: 20%;
+		margin-top: 2%;
+	}
+	#title{
+		position: absolute;
+		margin-left: 34%;
+		margin-top: 5%;
+		color: white;
+		font-family: Andale Mono, monospace;
+		font-weight: 600;
+		font-size: 60px;
+		text-shadow:
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+
+	.capital{
+		font-size: 80px;
+		filter: brightness(1.75);
+	}
+
+	#D{
+		color: darkred;
+		margin-top: 30%;
+		text-shadow:
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+
+	#H{
+		color: darkred;
+		margin-top: 30%;
+		text-shadow:
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+
+	#year{
+		color: darkred;
+		margin-top: 30%;
+		text-shadow:
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+}
+
+@media screen and (max-width:280px ) {
+
+#appHeroes{
+	display: flex;
+	flex-direction: column;
+}
+
+	#logo{
+		position: absolute;
+		width: 60px;
+		height: 70px;
+		margin-left: 5%;
+		margin-top: 2%;
+	}
+	#title{
+		position: absolute;
+		margin-left: 30%;
+		margin-top: 12%;
+		color: white;
+		font-family: Andale Mono, monospace;
+		font-weight: 600;
+		font-size: 15px;
+		text-shadow:
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+
+	.capital{
+		font-size: 
+		20px;
+		filter: brightness(1.75);
+	}
+
+	#D{
+		color: darkred;
+		margin-top: 30%;
+		text-shadow:
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+
+	#H{
+		color: darkred;
+		margin-top: 30%;
+		text-shadow:
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+
+	#year{
+		color: darkred;
+		margin-top: 30%;
+		text-shadow:
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+}

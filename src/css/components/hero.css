@@ -1,0 +1,266 @@
+@media screen and (max-width:280px ) {
+
+    #super1{
+        position: relative;
+        width: 50%;
+        height: 10%;
+        
+    }
+
+    .occupa{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content{
+        margin-top: 8%;
+        width: 50px;
+        height: 30px;
+        margin-left: 5%;
+        background: whitesmoke;
+        opacity: 0.8;
+        display: flex;
+        flex-direction: row;
+        box-shadow: #191970 1px 1px 0 ,
+                    #191970 2px 2px 0 ,
+                    #191970 3px 3px 0 ,
+                    #191970 4px 4px 0 ,
+                       #191970 5px 5px 0 ,
+                    #191970 6px 6px 0 ,
+                    #191970 7px 7px 0 ,
+                    #191970 8px 8px 0 ;
+    }
+
+    .content1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hanzo{
+        font-family: Arial;
+        font-size: 2px;
+        color: darkred;
+        margin-left: 10px;
+        text-shadow:
+        0 0 2px rgba(255,0,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1);
+    }
+
+    .occupancy{
+        font-family: Arial;
+        font-size: 10px;
+        color: darkred;
+        margin-top: 4px;
+        margin-left: 10px;
+        text-shadow:
+        0 0 2px rgba(255,0,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1);
+    }
+
+    .textOccupancy{
+        font-size: 10px;
+        color:  black;
+        font-weight: 400;
+        margin-left: 10px;
+        margin-top: 4px;
+        font-family: Arial;
+    }
+
+    .cross{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 12px;
+        height: 12px;    
+    }
+
+    .crossB{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        margin-top: 140px;
+        margin-left: 280px;
+        display: flex;
+        align-items: center;
+    }
+
+    .tLore{
+        position: absolute;
+        margin-top: 76px;
+        font-family: Arial;
+        font-size: 10px;
+        color: darkred;
+        margin-left: 130px;
+        font-weight: 400;
+        text-shadow:
+        0 0 2px rgba(255,0,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1);
+    }
+
+    .textLore{
+        position: absolute;
+        margin-left: 30px;
+        margin-right: 70px;
+        margin-top: 90px;
+        font-size: 8px;
+        color:  black;
+        font-family: Arial;
+    }
+
+}
+
+@media screen and (min-width:280px ) {
+
+    #super1{
+        width: 150px;
+        height: 200px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .occupa{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content{
+
+        margin-top: 5%;
+        width: 800px;
+        height: 270px;
+        margin-left: 25%;
+        background: whitesmoke;
+        opacity: 0.8;
+        display: flex;
+        flex-direction: row;
+        box-shadow: #191970 1px 1px 0 ,
+                    #191970 2px 2px 0 ,
+                    #191970 3px 3px 0 ,
+                    #191970 4px 4px 0 ,
+                       #191970 5px 5px 0 ,
+                    #191970 6px 6px 0 ,
+                    #191970 7px 7px 0 ,
+                    #191970 8px 8px 0 ;
+    }
+
+    .content1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hanzo{
+         font-family: Arial;
+        font-size: 30px;
+        color: darkred;
+        margin-left: 10px;
+        text-shadow:
+        0 0 2px rgba(255,0,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1);
+    }
+
+    .occupancy{
+        font-family: Arial;
+        font-size: 15px;
+        color: darkred;
+        margin-top: 15px;
+        margin-left: 10px;
+        text-shadow:
+        0 0 2px rgba(255,0,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1);
+    }
+
+    .textOccupancy{
+        font-size: 13px;
+        color:  black;
+        font-weight: 400;
+        margin-left: 10px;
+        font-family: Arial;
+    }
+
+    .cross{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 20px;
+        height: 20px;    
+        position: absolute;
+    }
+    
+    .crossB{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        display: inline-flex;
+        margin-top: 220px;
+        margin-left: 570px;
+    }
+
+    .tLore{
+        position: absolute;
+        margin-top: 120px;
+        font-family: Arial;
+        font-size: 15px;
+        color: darkred;
+        margin-left: 270px;
+        font-weight: 400;
+        text-shadow:
+        0 0 2px rgba(255,0,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,178,255,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 2px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1),
+        0 0 5px rgba(255,104,127,1);
+    }
+
+    .textLore{
+        position: absolute;
+        margin-left: 60px;
+        margin-right: 380px;
+        margin-top: 150px;
+        font-size: 12px;
+        color:  black;
+        font-family: Arial;
+    }
+
+}
+

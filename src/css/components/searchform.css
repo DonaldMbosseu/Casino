@@ -1,0 +1,101 @@
+@media screen and (min-width:280px ) {
+
+	#button{
+		color: white;
+		font-family: Arial;
+		position: absolute;
+		margin-top: 15%;
+		margin-left: 2%;
+		width: 80px;
+		height: 30px;
+		background-color: darkred;
+		border-radius: 3px;
+		box-shadow: 
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+
+
+	#searchBox{
+		width: 200px;
+		height: 30px;
+		margin-left: 40%;
+		margin-top: 15%;
+		border-radius: 5px;
+		box-shadow: 
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+
+	#searchBox::placeholder{
+		color:  darkred;
+		font-size: 15px;
+	}
+	
+}
+
+@media screen and (max-width:280px ) {
+
+	#button{
+		color: white;
+		font-family: Arial;
+		position: absolute;
+		font-size: 5px;
+		margin-top: 29%;
+		margin-left: 2%;
+		width: 30px;
+		height: 13px;
+		background-color: darkred;
+		border-radius: 3px;
+		box-shadow: 
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+
+
+	#searchBox{
+		width: 60px;
+		height: 10px;
+		margin-left: 35%;
+		margin-top: 30%;
+		border-radius: 5px;
+		box-shadow: 
+		0 0 2px rgba(255,0,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,178,255,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 2px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1),
+		0 0 5px rgba(255,104,127,1);
+	}
+
+	#searchBox::placeholder{
+		color:  darkred;
+		font-size: 6px;
+	}
+	
+
+}

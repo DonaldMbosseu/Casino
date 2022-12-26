@@ -1,0 +1,27 @@
+{
+  "name": "js-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "prebuild" : "del /S /Q dist",
+    "build": "node build/build.js",
+    "dev:build-watch": "node build/build-watch.js",
+    "dev:livereload": "node build/livereload.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5"
+
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "clean-css": "^5.2.1",
+    "esbuild": "^0.13.4",
+    "fs-extra": "^10.0.0",
+    "html-minifier": "^4.0.0"
+  }
+}

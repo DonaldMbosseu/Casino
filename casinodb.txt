@@ -1,0 +1,37 @@
+use casinodb;
+
+drop table if exists casino cascade ;
+create table casino(
+    id int,
+    casino_name varchar(20) NOT NULL,
+    primary key (id)
+);
+
+drop table if exists game cascade ;
+create table game(
+    game_type varchar(20),
+    game_name varchar(255),
+    casino_id int,
+    primary key (game_type),
+    foreign key (casino_id) references casino(id)
+);
+
+drop table if exists country cascade ;
+create table country(
+    id int,
+    country_name varchar(20) NOT NULL,
+    game varchar(20),
+    primary key (id),
+    foreign key (game) references game(game_type)
+);
+
+drop table if exists player cascade ;
+create table player(
+    id int,
+    player_name varchar(225) NOT NULL,
+	favourite varchar(20),
+    country_id int,
+    primary key (id),
+    foreign key (favourite) references game(game_type),
+    foreign key (country_id) references country(id)
+);
