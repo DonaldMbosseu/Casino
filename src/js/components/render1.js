@@ -19,7 +19,7 @@ Vue.component('render1', {
                 cursor++;
             }
         },
-
+        
        async search1(countr, cursor){
             var response = await fetch('https://restcountries.com/v3.1/name/'+ countr, {
                 method: "GET",

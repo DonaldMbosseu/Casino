@@ -19,7 +19,7 @@ Vue.component('render2', {
                     "Content-Type": "application/json"
                 },
             })       .then(response => response.json())
-            .then(response => { this.$root.countryChooser(response, countriesf)});
+            .then(response => { this.$root.countriesStore(response, countriesf)});
         },
     }
 }

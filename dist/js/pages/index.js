@@ -10,7 +10,7 @@
       <form v-on:submit.prevent="search">
       <input type="text"  id="searchBox" placeholder=" search Countries by ','..." v-model="searchInput">
       <input type="submit" value="search" id="button">
-      </form>`,methods:{search(t){var e=this.searchInput.split(",");fetch("https://restcountries.com/v3.1/all",{method:"GET",headers:{"Content-Type":"application/json"}}).then(n=>n.json()).then(n=>{this.$root.countryChooser(n,e)})}}});Vue.component("question3",{data:()=>({searchInput:""}),template:`
+      </form>`,methods:{search(t){var e=this.searchInput.split(",");fetch("https://restcountries.com/v3.1/all",{method:"GET",headers:{"Content-Type":"application/json"}}).then(n=>n.json()).then(n=>{this.$root.countriesStore(n,e)})}}});Vue.component("question3",{data:()=>({searchInput:""}),template:`
       <form v-on:submit.prevent="search">
       <input type="text"  id="searchBox" placeholder=" Filter by Country name..." v-model="searchInput">
       <input type="submit" value="search" id="button">
@@ -28,5 +28,5 @@
     <p>{{ name }}</p>
     <img :src="flag" alt="flag Image">
     </div>
-    `,methods:{runTest(){alert(this.flag)}},computed:{}});var g=new Vue({el:"#renderB",data:()=>({countries:[],countries1:[],country:Object}),methods:{countriesStore(t){alert(t),this.countries=t},countryChooser(t,e){for(var n=0;n<t.length;n++)for(var r=0;r<e.length;r++)t[n].name.common===e[r]&&(this.countries[r]=t[n]);this.$forceUpdate()},filterByCountryName(t){var e=this.countries.filter(function(n){return n.name.common==t});this.countries=e,this.$forceUpdate()}}}),o=document.getElementById("button_one"),i=document.getElementById("button_two"),s=document.getElementById("button_three"),a=document.getElementById("button_four");a.onclick=function(){window.location.href="Q4.html"};s.onclick=function(){window.location.href="Q3.html"};i.onclick=function(){window.location.href="Q2.html"};o.onclick=function(){window.location.href="Q1.html"};})();
+    `,methods:{runTest(){alert(this.flag)}},computed:{}});var I=new Vue({el:"#renderB",data:()=>({countries:[],country:Object}),methods:{countriesStore(t,e){this.countries=t,this.filterCountryArray(e)},filterCountryArray(t){var e=this.countries.filter(function(n){for(var r=0;r<t.length;r++)if(n.name.common==t[r])return!0;return!1});this.countries=e,this.$forceUpdate()},filterByCountryName(t){var e=this.countries.filter(function(n){return n.name.common==t});this.countries=e,this.$forceUpdate()}}}),i=document.getElementById("button_one"),o=document.getElementById("button_two"),s=document.getElementById("button_three"),a=document.getElementById("button_four");a.onclick=function(){window.location.href="Q4.html"};s.onclick=function(){window.location.href="Q3.html"};o.onclick=function(){window.location.href="Q2.html"};i.onclick=function(){window.location.href="Q1.html"};})();
 //# sourceMappingURL=index.js.map

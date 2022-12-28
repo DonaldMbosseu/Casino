@@ -11,28 +11,28 @@ var app = new Vue({
     data: () => {
         return {
             countries:[],
-            countries1:[],
             country: Object,
         }
     },
     methods: {
-        countriesStore(countryArray){
-            alert(countryArray);
+        countriesStore(countryArray, researchedArray){
             this.countries = countryArray;
+            this.filterCountryArray(researchedArray);
         },
 
-
-        countryChooser(allCountries, countryArray){
-        for(var i = 0; i<allCountries.length; i++){
-            for(var j = 0; j < countryArray.length; j++){
-                if(allCountries[i].name.common === countryArray[j]){
-                    this.countries[j] = allCountries[i];
-                }
+        filterCountryArray(researchedArray){
+            var newArray = this.countries.filter(function (el)
+            {
+                for (var i = 0; i < researchedArray.length; i++) {
+                    if (el.name.common == researchedArray[i]){
+                        return true;
+                    }
+                  }
+                  return false;
             }
-        }
-        
-        this.$forceUpdate();
-
+            );
+            this.countries = newArray;
+            this.$forceUpdate();
         },
 
         filterByCountryName(name){
@@ -46,6 +46,8 @@ var app = new Vue({
         },
     }
 })
+
+
 
 
 
